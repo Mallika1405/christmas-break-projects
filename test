@@ -1,0 +1,9 @@
+import pandas as pd
+
+# Create a simple DataFrame
+df_test = pd.DataFrame({'Name': ['Alice'], 'Gift': ['Toy Car']})
+
+# Try appending a new row
+df_test = df_test.append({'Name': 'Bob', 'Gift': 'Ball'}, ignore_index=True)
+
+print(df_test)
